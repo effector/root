@@ -20,4 +20,3 @@ jobs:
         with:
           node-version: v12.x
       - run: yarn
-      - run: yarn build
