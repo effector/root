@@ -27,6 +27,17 @@
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "off"
       }
+    },
+    {
+      "files": ["*/common.js"],
+      "env": { "node": true }
+    },
+    {
+      "files": ["*/index.js"],
+      "env": { "node": true },
+      "parserOptions": {
+        "sourceType": "module"
+      }
     }
   ]
 }
