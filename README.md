@@ -11,7 +11,9 @@ Usually we just manually update declarations. For example, from `createEvent` to
 
 ## Usage
 
-To retrieve our app root domain we need just to import it.
+1. Replace all imports of `effector` to `effector-root`. You can do it by yourself or with babel plugin
+
+2. To retrieve our app root domain we need just to import it.
 
 ```js
 import { root } from 'effector-root'
