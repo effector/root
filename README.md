@@ -4,12 +4,12 @@
 
 All units of the effector created in root domain
 
-##Motivation
+## Motivation
 
 Sometimes we developed our apps and just afterwards start thinking about SSR and testing. For these purposes any effector app need to have root domain. 
 Usually we just manually update declarations. For example, from `createEvent` to `rootDomain.createEvent`. It takes time. effector-root provides you the possibility to have all units attached to the root domain without any manual actions.
 
-##Usage
+## Usage
 
 To retrieve our app root domain we need just to import it.
 
