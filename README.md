@@ -13,6 +13,6 @@ Usually we just manually update declarations. For example, from `createEvent` to
 
 To retrieve our app root domain we need just to import it.
 
-```
+```js
 import { root } from 'effector-root'
 ```
