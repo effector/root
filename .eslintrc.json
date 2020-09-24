@@ -29,7 +29,7 @@
       }
     },
     {
-      "files": ["*/common.js"],
+      "files": ["*/common.js", "./compat.js"],
       "env": { "node": true }
     },
     {

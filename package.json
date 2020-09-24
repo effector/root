@@ -5,7 +5,7 @@
   "main": "src/common.js",
   "module": "./src/index.js",
   "types": "./src/index.d.ts",
-  "files": ["src"],
+  "files": ["src", "compat.js", "compat.d.ts"],
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint --ext .ts,.tsx ./",

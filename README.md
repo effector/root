@@ -6,7 +6,7 @@ All units of the effector created in root domain
 
 ## Motivation
 
-Sometimes we developed our apps and just afterwards start thinking about SSR and testing. For these purposes any effector app need to have root domain. 
+Sometimes we developed our apps and just afterwards start thinking about SSR and testing. For these purposes any effector app need to have root domain.
 Usually we just manually update declarations. For example, from `createEvent` to `rootDomain.createEvent`. It takes time. effector-root provides you the possibility to have all units attached to the root domain without any manual actions.
 
 ## Usage
@@ -16,5 +16,15 @@ Usually we just manually update declarations. For example, from `createEvent` to
 2. To retrieve our app root domain we need just to import it.
 
 ```js
-import { root } from 'effector-root'
+import { root } from 'effector-root';
 ```
+
+### Compat
+
+You can easily use `effector/compat` in your application with `effector-root`, just:
+
+```ts
+import { root } from 'effector-root/compat';
+```
+
+    Note: `root` domain from `effector-root/compat` is not the same domain as from `effector-root`
