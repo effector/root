@@ -6,6 +6,33 @@
   "module": "./src/index.js",
   "types": "./src/index.d.ts",
   "files": ["src", "compat.js", "compat.d.ts"],
+  "exports": {
+    ".": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./src/common.js": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./src/common": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./src/index.js": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./src/index": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./src": {
+      "require": "./src/common.js",
+      "default": "./src/index.js"
+    },
+    "./compat": "./compat.js"
+  },
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint --ext .ts,.tsx ./",
