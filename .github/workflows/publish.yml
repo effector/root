@@ -17,6 +17,7 @@ jobs:
         with: {node-version: 12}
       # create cache for node modules
       - uses: actions/cache@v2
+        id: yarn-cache
         with:
           path: '**/node_modules'
           key: node-12-modules-${{ hashFiles('**/yarn.lock') }}
