@@ -28,6 +28,7 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           check-version: true
+          access: 'public'
       # log results
       - if: steps.publish.outputs.type != 'none'
         run: |
