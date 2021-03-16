@@ -16,15 +16,28 @@ Usually we just manually update declarations. For example, from `createEvent` to
 2. To retrieve our app root domain we need just to import it.
 
 ```js
-import { root } from 'effector-root';
+import { root, createEvent, attach, fork } from 'effector-root';
 ```
+
+### Create React App and macros support
+
+Replace all imports of `effector` to `effector-root/macro` to automatically add [sid](https://effector.dev/docs/api/effector/babel-plugin#sid):
+
+```js
+import { root, createEvent, attach, fork } from 'effector-root/macro';
+```
+
+> Note: [babel-plugin-macros] do not support `import * as name`, so
+> Your import `import * as effector from 'effector-root/macro` wont work
+
+[babel-plugin-macros]: https://github.com/kentcdodds/babel-plugin-macros
 
 ### Compat
 
 You can easily use `effector/compat` in your application with `effector-root`, just:
 
 ```ts
-import { root } from 'effector-root/compat';
+import { root, createEvent, attach, fork } from 'effector-root/compat';
 ```
 
-    Note: `root` domain from `effector-root/compat` is not the same domain as from `effector-root`
+> Note: `root` domain from `effector-root/compat` is not the same domain as from `effector-root`

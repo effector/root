@@ -9,6 +9,7 @@
     "import/extensions": "off",
     "@typescript-eslint/explicit-function-return-type": "off"
   },
+  "parser": "@babel/eslint-parser",
   "overrides": [
     {
       "files": ["*.tsx", "*.ts"],
