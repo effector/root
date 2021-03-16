@@ -1,7 +1,7 @@
 {
   "name": "effector-root",
   "description": "All units of the effector created in root domain",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "src/common.js",
   "module": "./src/index.js",
   "types": "./src/index.d.ts",
