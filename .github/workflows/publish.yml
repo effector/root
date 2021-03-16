@@ -10,7 +10,7 @@ jobs:
   publish-on-npm:
     runs-on: ubuntu-latest
     # don't publish on tag creation (assume that package was already published during committing to master branch)
-    if: github.event_name == 'push' && !startsWith(github.ref, 'refs/tags/')
+    if: github.event_name == 'push' && !startsWith(github.ref, 'refs/tags/') || github.event_type == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
