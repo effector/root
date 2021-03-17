@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const { createMacro } = require('babel-plugin-macros');
 const { addNamed } = require('@babel/helper-module-imports');
-const { default: traverse } = require('@babel/traverse');
 const babelPlugin = require('effector/babel-plugin');
 
 module.exports = createMacro(logger, {
@@ -31,7 +30,7 @@ function logger({
   const instance = babelPlugin(babel, config);
 
   instance.pre();
-  traverse(program.parent, instance.visitor, undefined, {
+  babel.traverse(program.parent, instance.visitor, undefined, {
     ...state,
     ...instance,
   });
