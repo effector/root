@@ -1,7 +1,7 @@
 {
   "name": "effector-root",
-  "description": "All units of the effector created in root domain",
-  "version": "1.2.0",
+  "description": "Units in the root domain for testing and SSR support",
+  "version": "1.3.0",
   "main": "src/common.js",
   "module": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -74,7 +74,7 @@
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "effector": "^21.8.0"
+    "effector": "^21.8.7"
   },
   "config": {
     "commitizen": {
