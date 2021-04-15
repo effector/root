@@ -81,7 +81,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "@babel/helper-module-imports": "^7.12.13"
-  }
+  "dependencies": {}
 }
