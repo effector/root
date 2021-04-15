@@ -2,11 +2,11 @@
 const { createMacro } = require('babel-plugin-macros');
 const babelPlugin = require('effector/babel-plugin');
 
-module.exports = createMacro(logger, {
+module.exports = createMacro(root, {
   configName: 'effectorRoot',
 });
 
-function logger({
+function root({
   references,
   state,
   babel,
@@ -15,11 +15,16 @@ function logger({
   const program = state.file.path;
   // First of all replace import path to effector-root instead of /macro
   Object.keys(references).forEach((referenceName) => {
-    const id = addImport(babel.types, program, referenceName, importModuleName);
+    const newName = addImport(
+      babel.types,
+      program,
+      referenceName,
+      importModuleName,
+    );
 
     // Change name of method to updated
     references[referenceName].forEach((referencePath) => {
-      referencePath.node.name = id;
+      referencePath.node.name = newName;
     });
   });
 
