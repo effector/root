@@ -43,3 +43,12 @@ import { root, createEvent, attach, fork } from 'effector-root/compat';
 ```
 
 > Note: `root` domain from `effector-root/compat` is not the same domain as from `effector-root`
+
+### How to auto replace all imports of effector to effector-root using babel plugin
+
+1. Install [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
+2. Add to plugins:
+```ts
+['module-resolver', { alias: { effector: 'effector-root' } } ]
+```
+
