@@ -74,7 +74,7 @@
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
-    "effector": "^21.8.7"
+    "effector": "^21.8.7 || ^22.0.0"
   },
   "config": {
     "commitizen": {
