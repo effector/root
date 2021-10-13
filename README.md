@@ -1,5 +1,7 @@
 # effector-root
 
+> *This package is going to be archived*: Cause [effector v22](https://github.com/effector/effector/releases/tag/effector%4022.0.0) doesn't require to have a domain to fork
+
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](http://prettier.io)
 
 **Do not depend on this package in your _libraries_!**
